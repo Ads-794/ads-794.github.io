@@ -1,24 +1,70 @@
 import { BASE_TASKS, SCENARIOS, createQueue, applyEvent, reconcileSnapshot, createDraft, draftTransition } from './lab-engine.js';
+import { initializeMotion } from './motion.js';
 
 const find = selector => document.querySelector(selector);
 document.documentElement.classList.add('js');
 find('#year').textContent = String(new Date().getFullYear());
+initializeMotion();
 
 // Navigation stays native; JavaScript adds an optional mobile disclosure.
 const menuButton = find('.menu-button');
 const navLinks = find('#nav-links');
+const mobileNavigation = window.matchMedia('(max-width: 900px)');
+const reducedMenuMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+let menuAnimation = null;
+
+function settleMenu() {
+  menuAnimation?.cancel();
+  menuAnimation = null;
+  const open = menuButton.getAttribute('aria-expanded') === 'true';
+  navLinks.classList.toggle('is-open', open);
+  navLinks.inert = mobileNavigation.matches && !open;
+  navLinks.style.removeProperty('overflow');
+}
+
+function setMenu(open) {
+  if (!menuAnimation && open === (menuButton.getAttribute('aria-expanded') === 'true')) {
+    settleMenu();
+    return;
+  }
+  const height = navLinks.getBoundingClientRect().height;
+  const opacity = getComputedStyle(navLinks).opacity;
+  const padding = getComputedStyle(navLinks).paddingTop;
+  menuAnimation?.cancel();
+  menuButton.setAttribute('aria-expanded', String(open));
+  if (reducedMenuMotion.matches || !mobileNavigation.matches || !navLinks.animate) {
+    settleMenu();
+    return;
+  }
+  navLinks.classList.add('is-open');
+  navLinks.inert = !open;
+  navLinks.style.overflow = 'hidden';
+  const targetHeight = open ? navLinks.getBoundingClientRect().height : 0;
+  menuAnimation = navLinks.animate({
+    height: [height + 'px', targetHeight + 'px'],
+    opacity: [height ? opacity : 0, open ? 1 : 0],
+    paddingBlock: [height ? padding : '0px', open ? '8px' : '0px'],
+  }, { duration: open ? 300 : 220, easing: 'cubic-bezier(.16, 1, .3, 1)', fill: 'both' });
+  menuAnimation.onfinish = settleMenu;
+}
+
 function closeMenu(restoreFocus = false) {
-  navLinks.classList.remove('is-open');
-  menuButton.setAttribute('aria-expanded', 'false');
+  setMenu(false);
   if (restoreFocus) menuButton.focus();
 }
 menuButton.addEventListener('click', () => {
   const open = menuButton.getAttribute('aria-expanded') !== 'true';
-  navLinks.classList.toggle('is-open', open);
-  menuButton.setAttribute('aria-expanded', String(open));
+  setMenu(open);
 });
 navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => closeMenu()));
-window.matchMedia('(max-width: 900px)').addEventListener('change', () => closeMenu());
+mobileNavigation.addEventListener('change', () => {
+  menuButton.setAttribute('aria-expanded', 'false');
+  settleMenu();
+});
+reducedMenuMotion.addEventListener('change', settleMenu);
+window.addEventListener('resize', settleMenu);
+document.addEventListener('visibilitychange', () => { if (document.hidden) settleMenu(); });
+settleMenu();
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') closeMenu(true);
 });
