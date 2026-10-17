@@ -1,206 +1,110 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Aditya Dixit is a Senior Frontend Engineer building reliable React applications for complex operational workflows."
-    />
-    <meta name="theme-color" content="#0d1c2b" />
-    <title>Aditya Dixit — Senior Frontend Engineer</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-
-    <header class="site-header">
-      <nav class="nav shell" aria-label="Primary navigation">
-        <a class="wordmark" href="#top" aria-label="Aditya Dixit home">
-          <span class="wordmark-mark">AD</span>
-          <span>Aditya Dixit</span>
-        </a>
-        <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">
-          Menu
-        </button>
-        <div class="nav-links" id="nav-links">
-          <a href="#work" data-nav-link>Case studies</a>
-          <a href="#approach" data-nav-link>Approach</a>
-          <a href="#experience" data-nav-link>Experience</a>
-          <a class="nav-resume" href="Aditya_Dixit_Resume_04_10_2026.pdf" target="_blank" rel="noreferrer">Résumé ↗</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Aditya Dixit, Senior Frontend Engineer. Explore interactive experiments and engineering decisions behind reliable React interfaces." />
+  <meta name="theme-color" content="#e5f0ed" />
+  <meta property="og:title" content="Aditya Dixit — Interfaces that hold together" />
+  <meta property="og:description" content="Frontend engineering through interactive experiments, considered decisions, and dependable interfaces." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ads-794.github.io/" />
+  <meta property="og:image" content="https://ads-794.github.io/assets/aditya.webp" />
+  <title>Aditya Dixit — Senior Frontend Engineer</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/hanken-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" /></symbol>
+    <symbol id="i-up-right" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12" /></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14" /></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6" /></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" /></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z" /></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 2 8M4 4v6h6" /></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 5 5" /></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2" /><path d="M15 8V4H4v11h4" /></symbol>
+  </svg>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Primary navigation">
+      <a class="wordmark" href="#top" aria-label="Aditya Dixit home"><span class="monogram" aria-hidden="true">ad.</span><span>Aditya Dixit</span></a>
+      <button class="menu-button enhanced" type="button" aria-expanded="false" aria-controls="nav-links">Menu <svg class="icon"><use href="#i-plus" /></svg></button>
+      <div class="nav-links" id="nav-links"><a href="#work" data-nav-link>Work</a><a href="#approach" data-nav-link>Approach</a><a href="#experience" data-nav-link>Experience</a><a href="#contact" data-nav-link>Contact</a></div>
+      <div class="nav-tools"><button class="command-trigger enhanced" type="button" aria-label="Open quick navigation" title="Quick navigation (Ctrl or Command K)"><svg class="icon"><use href="#i-search" /></svg><kbd>Ctrl K</kbd></button><a class="resume-link" href="Aditya_Dixit_Resume_04_10_2026.pdf" target="_blank" rel="noopener noreferrer">Résumé <svg class="icon"><use href="#i-up-right" /></svg></a></div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="opening wrap" id="top" aria-labelledby="intro-title">
+      <div class="intro">
+        <h1 id="intro-title">Interfaces<br />that <span>hold<br class="desktop-break" /> together.</span></h1>
+        <p class="intro-role">I'm Aditya, a Senior Frontend Engineer.</p>
+        <p class="intro-copy">I turn complex workflows into dependable React interfaces. Especially when the data is live, the network isn't, and someone's work is on the line.</p>
+        <div class="intro-actions"><a class="button button-dark" href="#work">Explore my work <svg class="icon"><use href="#i-arrow" /></svg></a><a class="quiet-link" href="Aditya_Dixit_Resume_04_10_2026.pdf" target="_blank" rel="noopener noreferrer">View résumé <svg class="icon"><use href="#i-up-right" /></svg></a></div>
+        <details class="brief"><summary>In 30 seconds <span class="summary-note">the hiring brief</span><svg class="icon"><use href="#i-plus" /></svg></summary><div class="brief-content"><p><strong>5 years building frontends.</strong> Currently a Senior Frontend Developer at Otomashen, based in Noida, India.</p><p><strong>Where I go deep:</strong> React architecture, real-time recovery, complex forms, and AI-assisted workflows with human review.</p><p><strong>What I bring:</strong> ownership from feature boundaries through API integration, accessible UI, and focused tests.</p><a href="mailto:aadityaadixit@gmail.com">Start a conversation <svg class="icon"><use href="#i-arrow" /></svg></a></div></details>
+        <div class="intro-foot"><span class="location-mark" aria-hidden="true"></span>Noida, India <span class="intro-separator">/</span> Building for the web since 2021</div>
+      </div>
+      <div class="experiment" id="reliability-lab" aria-labelledby="lab-title">
+        <div class="experiment-heading"><div><h2 id="lab-title">Try the unhappy path.</h2><p>A small experiment in dependable UI.</p></div><svg class="experiment-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M5 24h12l6-15 7 30 5-15h8" /></svg></div>
+        <div class="scenario-tabs" role="group" aria-label="Choose a failure scenario"><button type="button" data-scenario="duplicate" aria-pressed="true" disabled>Duplicate event</button><button type="button" data-scenario="stale" aria-pressed="false" disabled>Out of order</button><button type="button" data-scenario="reconnect" aria-pressed="false" disabled>Connection loss</button></div>
+        <div class="lab-screen">
+          <div class="lab-toolbar"><span class="data-label">WORK QUEUE</span><span id="connection-state" class="connection-state"><span></span>Connected</span></div>
+          <div class="queue-table" role="table" aria-label="Synthetic work queue">
+            <div class="queue-head" role="row"><span role="columnheader">Task</span><span role="columnheader">State</span><span role="columnheader">Version</span></div>
+            <div id="queue-rows" role="rowgroup"><div class="queue-row" role="row"><span role="cell">Review project brief</span><span role="cell"><span class="task-status review">In review</span></span><span role="cell" class="version">v3</span></div><div class="queue-row" role="row"><span role="cell">Prepare outline</span><span role="cell"><span class="task-status ready">Ready</span></span><span role="cell" class="version">v2</span></div><div class="queue-row" role="row"><span role="cell">Schedule handoff</span><span role="cell"><span class="task-status queued">Queued</span></span><span role="cell" class="version">v1</span></div></div>
+          </div>
+          <div class="event-route" aria-hidden="true"><span>Event stream</span><svg viewBox="0 0 260 28" preserveAspectRatio="none"><path class="route-line" d="M0 14h104q12 0 12-8v0h28v16h28v-8h88" /><circle class="route-packet" cx="11" cy="14" r="4" /></svg><span>Visible state</span></div>
+          <div class="event-log" id="event-log" aria-label="Event decisions"><p><span class="log-marker"></span><span>Ready to receive an event.</span><code>waiting</code></p></div>
         </div>
-      </nav>
-    </header>
-
-    <main id="main">
-      <section class="hero shell" id="top">
-        <div class="hero-copy" data-reveal style="--reveal-delay: 80ms">
-          <p class="eyebrow"><span></span> Senior Frontend Engineer · Noida, India</p>
-          <h1>Dependable frontend systems for complex operational work.</h1>
-          <p class="hero-intro">
-            I build React applications people can trust when the state is live, the workflows are dense, and the details matter.
-            My experience spans healthcare, RCM, procurement, and enterprise operations.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work">Explore case studies <span>↓</span></a>
-            <a class="button button-secondary" href="Aditya_Dixit_Resume_04_10_2026.pdf" target="_blank" rel="noreferrer">Download résumé</a>
+        <div class="lab-controls"><label class="guard-switch"><input type="checkbox" id="guard-toggle" checked disabled /><span class="switch-track" aria-hidden="true"></span>Safeguards <strong id="guard-word">on</strong></label><div><button class="reset-button" id="queue-reset" type="button" aria-label="Reset queue experiment" disabled><svg class="icon"><use href="#i-reset" /></svg></button><button class="button button-light" id="run-queue" type="button" disabled><svg class="icon"><use href="#i-play" /></svg><span>Run experiment</span></button></div></div>
+        <p class="lab-result" id="queue-result" role="status" aria-live="polite">Send the same event twice. Watch what makes it through.</p>
+        <p class="simulation-note">Interactive demonstration · synthetic data · no live service</p>
+        <noscript><p class="noscript-note">Enable JavaScript to run the experiments. The case studies and all contact links are available below.</p></noscript>
+      </div>
+    </section>
+    <div class="expertise-line wrap" aria-label="Focus areas"><span>React &amp; JavaScript</span><span>Frontend architecture</span><span>Real-time systems</span><span>Human-centred AI</span><span>Accessible interfaces</span></div>
+    <section class="work-section wrap" id="work" aria-labelledby="work-title">
+      <div class="section-intro"><h2 id="work-title">The work behind<br />the interface.</h2><p>Complex products are made of small decisions.<br />Here are a few I've spent time getting right.</p></div>
+      <p class="confidentiality">These case studies describe my responsibilities and methods. Client details are anonymized; the experiments are original illustrations.</p>
+      <article class="case-study" id="case-realtime">
+        <div class="case-heading"><h3>Keeping live work<br />in a trustworthy state.</h3><div class="case-context"><span>Real-time operations</span><span>React · Socket.IO · REST</span></div></div>
+        <div class="case-body"><p>When a queue drives someone's next action, a stale update is more than a visual glitch. I built frontend recovery around event deduplication, ordering safeguards, reconnect replay, and REST reconciliation.</p><a class="inline-link" href="#reliability-lab">Try the recovery experiment <svg class="icon"><use href="#i-up-right" /></svg></a></div>
+        <details class="case-details"><summary>Read the engineering decisions <svg class="icon"><use href="#i-plus" /></svg></summary><div class="decision-grid"><div><h4>The problem</h4><p>Retries can repeat events. Messages can arrive out of order. A restored connection can still leave the screen behind the server.</p></div><div><h4>My decisions</h4><p>Separate transport status from data freshness. Deduplicate events, guard ordering, and reconcile after reconnect rather than treating a connected socket as proof of a current UI.</p></div><div><h4>The trade-off</h4><p>Recovery adds state and server-contract requirements. The tiny experiment uses entity versions and a snapshot; a production protocol also needs durable cursors, deletion semantics, and bounded replay.</p></div><div><h4>What I validate</h4><p>Duplicate delivery, late updates, reconnect gaps, query refreshes, and session changes. The intended result is a predictable view through disruption.</p></div></div></details>
+      </article>
+      <article class="case-study draft-case" id="case-drafts">
+        <div class="case-heading"><h3>Let suggestions help.<br />Keep people in control.</h3><div class="case-context"><span>AI-assisted workflows</span><span>Forms · Draft ownership · Review</span></div></div>
+        <div class="case-body"><p>I built flows that turn prompts and documents into editable drafts, collect follow-up answers, and preserve human review before submission. The important question: what happens if the user edits while a suggestion is on its way?</p></div>
+        <div class="draft-experiment" aria-labelledby="draft-title">
+          <div class="draft-instructions"><h4 id="draft-title">Your edit gets<br />the final word.</h4><p>Request a suggestion, then change the title while it arrives. Your text stays yours.</p><p class="demo-label">An original, simulated draft workflow.<br />No AI service or submission is connected.</p><div class="draft-steps" aria-label="Draft workflow"><span data-draft-step="editing" aria-current="step">Edit</span><svg class="icon"><use href="#i-arrow" /></svg><span data-draft-step="review">Review</span><svg class="icon"><use href="#i-arrow" /></svg><span data-draft-step="confirmed">Confirm</span></div></div>
+          <div class="draft-workspace">
+            <div id="draft-editor"><label for="draft-title-input">Draft title</label><input id="draft-title-input" type="text" value="Quarterly supplier review" maxlength="120" autocomplete="off" disabled /><p id="draft-status" class="draft-status" role="status" aria-live="polite">Ready for your input.</p><div id="draft-suggestion" class="suggestion" hidden><p>Your edit was kept. The suggestion is available below.</p><blockquote id="suggested-title"></blockquote><div><button class="small-button" type="button" id="keep-edit">Keep my edit</button><button class="text-button" type="button" id="accept-suggestion">Use suggestion</button></div></div><div class="draft-actions"><button class="small-button" type="button" id="request-suggestion" disabled>Request suggestion</button><button class="button button-dark" type="button" id="review-draft" disabled>Review draft <svg class="icon"><use href="#i-arrow" /></svg></button></div></div>
+            <div id="draft-review" hidden><span class="field-label">Review before confirming</span><h5 id="review-title"></h5><p>This is the exact text you will confirm in the demo.</p><div class="draft-actions"><button class="text-button" type="button" id="edit-again">Back to editing</button><button class="button button-dark" type="button" id="confirm-draft">Confirm in demo <svg class="icon"><use href="#i-check" /></svg></button></div></div>
+            <div id="draft-confirmed" hidden tabindex="-1"><svg class="confirmed-mark icon"><use href="#i-check" /></svg><h5>Confirmed, once.</h5><p id="confirmed-title"></p><p>Your reviewed version was preserved. Nothing was sent anywhere.</p></div>
+            <button class="draft-reset text-button" id="reset-draft" type="button" disabled><svg class="icon"><use href="#i-reset" /></svg>Reset demo</button>
           </div>
         </div>
-
-        <aside class="hero-note" aria-label="What I focus on" data-reveal style="--reveal-delay: 180ms">
-          <p class="note-label">Focus areas</p>
-          <ul>
-            <li>Reliable real-time interfaces</li>
-            <li>Frontend architecture &amp; state</li>
-            <li>Safe, human-centred AI flows</li>
-            <li>Complex forms &amp; operations UI</li>
-          </ul>
-          <p class="note-foot">5 years of frontend engineering experience</p>
-        </aside>
-      </section>
-
-      <section class="proof-strip" aria-label="Technical expertise">
-        <div class="shell proof-list">
-          <span>React.js</span>
-          <span>TypeScript-ready architecture</span>
-          <span>TanStack Query</span>
-          <span>Socket.IO &amp; SSE</span>
-          <span>Testing strategy</span>
-        </div>
-      </section>
-
-      <section class="section shell" id="work">
-        <div class="section-heading split-heading" data-reveal>
-          <div>
-            <p class="eyebrow">Selected work</p>
-            <h2>What I help teams solve.</h2>
-          </div>
-          <p>
-            These are anonymised engineering case studies. They describe my responsibilities and methods without sharing client code,
-            product links, screenshots, data, or confidential business details.
-          </p>
-        </div>
-
-        <div class="case-grid">
-          <article class="case-card case-card-featured" data-reveal style="--reveal-delay: 80ms">
-            <div class="case-number">01</div>
-            <p class="case-type">Live operational systems</p>
-            <h3>Keeping real-time queues trustworthy through disruption.</h3>
-            <p>
-              Operational users need a consistent view even when messages arrive out of order or a connection drops. I designed
-              frontend behaviour around event deduplication, ordering safeguards, reconnect replay, and REST reconciliation.
-            </p>
-            <div class="tag-list" aria-label="Case study technologies">
-              <span>Socket.IO</span><span>React</span><span>State recovery</span>
-            </div>
-          </article>
-
-          <article class="case-card" data-reveal style="--reveal-delay: 150ms">
-            <div class="case-number">02</div>
-            <p class="case-type">AI-assisted workflows</p>
-            <h3>Giving people control over AI-assisted creation.</h3>
-            <p>
-              I built user-facing flows that transform prompts and documents into editable drafts, collect follow-up answers, and
-              preserve human review before a final submission.
-            </p>
-            <div class="tag-list" aria-label="Case study technologies">
-              <span>Forms</span><span>Draft state</span><span>Review UX</span>
-            </div>
-          </article>
-
-          <article class="case-card" data-reveal style="--reveal-delay: 220ms">
-            <div class="case-number">03</div>
-            <p class="case-type">Frontend foundations</p>
-            <h3>Making complex applications easier to extend safely.</h3>
-            <p>
-              I organise feature modules behind clear public contracts, create role-aware navigation, and use shared data and UI
-              patterns so new work does not make the product harder to maintain.
-            </p>
-            <div class="tag-list" aria-label="Case study technologies">
-              <span>Vite</span><span>TanStack Query</span><span>Feature modules</span>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section-tint" id="approach">
-        <div class="shell approach-layout">
-          <div class="section-heading" data-reveal>
-            <p class="eyebrow">How I work</p>
-            <h2>Good product UI anticipates the imperfect path.</h2>
-          </div>
-          <div class="principles">
-            <article data-reveal style="--reveal-delay: 80ms">
-              <span>01</span>
-              <div>
-                <h3>Design for changing state</h3>
-                <p>Loading, background refreshes, expired sessions, and reconnects are product states—not afterthoughts.</p>
-              </div>
-            </article>
-            <article data-reveal style="--reveal-delay: 150ms">
-              <span>02</span>
-              <div>
-                <h3>Make complexity legible</h3>
-                <p>I use clear boundaries, predictable data ownership, and reusable components to keep complicated systems understandable.</p>
-              </div>
-            </article>
-            <article data-reveal style="--reveal-delay: 220ms">
-              <span>03</span>
-              <div>
-                <h3>Protect user progress</h3>
-                <p>Forms and operational tools should preserve intent, avoid stale updates, and help people recover calmly from errors.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section shell" id="experience">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Experience</p>
-          <h2>Building production frontends since 2021.</h2>
-        </div>
-        <ol class="timeline">
-          <li data-reveal style="--reveal-delay: 80ms">
-            <div class="timeline-period">Nov 2024 — Present</div>
-            <div>
-              <h3>Senior Frontend Developer <span>· Otomashen</span></h3>
-              <p>Building frontend applications for virtual-care and vendor-management workflows.</p>
-            </div>
-          </li>
-          <li data-reveal style="--reveal-delay: 150ms">
-            <div class="timeline-period">Aug 2023 — Jul 2024</div>
-            <div>
-              <h3>Frontend Developer <span>· Aakaar Biotechnologies</span></h3>
-              <p>Developed React CRM and e-commerce features, integrations, and responsive customer workflows.</p>
-            </div>
-          </li>
-          <li data-reveal style="--reveal-delay: 220ms">
-            <div class="timeline-period">Apr 2021 — May 2023</div>
-            <div>
-              <h3>Frontend Developer <span>· Tata Consultancy Services</span></h3>
-              <p>Built enterprise React interfaces, contributed tests, and supported teammates on component quality and state management.</p>
-            </div>
-          </li>
-        </ol>
-      </section>
-
-      <section class="contact shell" id="contact" data-reveal>
-        <p class="eyebrow">Let’s connect</p>
-        <h2>Need a frontend engineer who cares about the edge cases?</h2>
-        <p>I’m happy to discuss product engineering, frontend architecture, and opportunities where reliability matters.</p>
-        <div class="contact-actions">
-          <a class="button button-primary" href="mailto:aadityaadixit@gmail.com">Email me <span>↗</span></a>
-          <a class="text-link" href="https://www.linkedin.com/in/adityadixit794/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer shell">
-      <span>© <span id="year"></span> Aditya Dixit</span>
-      <span>Designed for clarity. Built for reliability.</span>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+        <details class="case-details"><summary>Read the engineering decisions <svg class="icon"><use href="#i-plus" /></svg></summary><div class="decision-grid"><div><h4>The problem</h4><p>A response arriving late can silently replace a user's edits. A follow-up answer can accidentally trigger a repeated final action.</p></div><div><h4>My decisions</h4><p>Keep a draft the user owns, separate suggestion state from confirmed data, and give review and final submission distinct steps. Preserve answers when users revise them.</p></div><div><h4>The trade-off</h4><p>Resolving a conflicting suggestion adds a decision. It is preferable to silently losing someone's work. A real submission also needs server-side idempotency and authorization.</p></div><div><h4>What I validate</h4><p>Edits during a pending response, stale responses, explicit acceptance, empty drafts, review changes, and repeated confirmations.</p></div></div></details>
+      </article>
+      <article class="architecture-case case-study" id="case-architecture">
+        <div class="case-heading"><h3>Room to grow.<br />Boundaries that hold.</h3><div class="case-context"><span>Frontend foundations</span><span>Vite · TanStack Query · Feature modules</span></div></div>
+        <div class="case-body"><p>I organize features behind public module contracts, build role-aware navigation, and separate server state from local interaction state. Shared API and UI patterns give the next feature somewhere sensible to live.</p></div>
+        <div class="boundary-diagram" aria-label="Illustrative frontend dependency flow"><div><strong>Feature modules</strong><span>Routes · UI · local state</span></div><svg class="icon"><use href="#i-arrow" /></svg><div><strong>Public contracts</strong><span>Explicit, tested boundaries</span></div><svg class="icon"><use href="#i-arrow" /></svg><div><strong>Shared foundations</strong><span>API · session · components</span></div></div>
+        <details class="case-details"><summary>Read the engineering decisions <svg class="icon"><use href="#i-plus" /></svg></summary><div class="decision-grid"><div><h4>The problem</h4><p>Features become difficult to change when routing, session handling, query state, and presentation depend on each other's internals.</p></div><div><h4>My decisions</h4><p>Use lazy-loaded feature routes, clear state ownership, shared API handling, and automated checks for dependency boundaries. Centralize session recovery without duplicating it in each screen.</p></div><div><h4>The trade-off</h4><p>Boundaries should protect real seams, not turn every component into a framework. I favor specific, understandable contracts over speculative abstractions.</p></div><div><h4>What I validate</h4><p>Authentication recovery, protected navigation, logout races, API failure states, and shared keyboard and form behavior.</p></div></div></details>
+      </article>
+    </section>
+    <section class="approach-section" id="approach" aria-labelledby="approach-title"><div class="wrap approach-layout"><div><h2 id="approach-title">The details are<br />the product.</h2><p>My work sits between frontend architecture and the small moments people actually use.</p></div><div class="principles"><article><h3>Start with the state.</h3><p>Loading, empty, expired, reconnecting, recovered. Each is part of the experience, with a next step the user can understand.</p></article><article><h3>Protect the work in progress.</h3><p>A background refresh should never casually replace a form someone is still filling out.</p></article><article><h3>Make the next change easier.</h3><p>Clear ownership, useful tests, and accessible components matter long after the first release.</p></article></div></div></section>
+    <section class="experience-section wrap" id="experience" aria-labelledby="experience-title">
+      <div class="section-intro"><h2 id="experience-title">Built in production.<br />Learned by doing.</h2><a class="inline-link" href="Aditya_Dixit_Resume_04_10_2026.pdf" target="_blank" rel="noopener noreferrer">Full résumé <svg class="icon"><use href="#i-up-right" /></svg></a></div>
+      <div class="experience-layout"><div class="portrait-note"><img src="assets/aditya.webp" alt="Aditya Dixit" width="400" height="400" loading="lazy" decoding="async" /><p>Aditya Dixit<br /><span>Senior Frontend Engineer · Noida, India</span></p></div><ol class="timeline"><li><div class="role-line"><h3>Otomashen</h3><time>Nov 2024 — Present</time></div><p class="job-title">Senior Frontend Developer</p><p>Building and owning frontend applications for virtual-care and vendor-management workflows: architecture, real-time behavior, API integration, and reusable patterns.</p></li><li><div class="role-line"><h3>Aakaar Biotechnologies</h3><time>Aug 2023 — Jul 2024</time></div><p class="job-title">Frontend Developer</p><p>React CRM and e-commerce features, REST and payment integrations, and responsive customer workflows.</p></li><li><div class="role-line"><h3>Tata Consultancy Services</h3><time>Apr 2021 — May 2023</time></div><p class="job-title">Frontend Developer</p><p>Enterprise React interfaces, reusable components, multilingual experiences, tests, and support for teammates on frontend quality.</p></li></ol></div>
+      <div class="education-line"><span>B.Tech, Computer Science</span><span>University of Petroleum and Energy Studies</span><span>2016 — 2020</span></div>
+    </section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="wrap"><div class="contact-top"><h2 id="contact-title">Let's build<br />something <span>dependable.</span></h2><p>Have a product with interesting frontend problems?<br />I'd like to hear about it.</p></div><div class="contact-bottom"><a class="email-link" href="mailto:aadityaadixit@gmail.com">aadityaadixit@gmail.com <svg class="icon"><use href="#i-up-right" /></svg></a><button class="copy-button enhanced" id="copy-email" type="button"><svg class="icon"><use href="#i-copy" /></svg><span>Copy email</span></button><div class="social-links"><a href="https://www.linkedin.com/in/adityadixit794/" target="_blank" rel="noopener noreferrer">LinkedIn <svg class="icon"><use href="#i-up-right" /></svg></a><a href="https://github.com/Ads-794" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon"><use href="#i-up-right" /></svg></a></div></div><p id="copy-status" class="copy-status" role="status" aria-live="polite"></p></div></section>
+  </main>
+  <footer class="site-footer wrap"><span>© <span id="year">2026</span> Aditya Dixit</span><span>Made with care. Kept intentionally light.</span><a href="#top">Back to top <svg class="icon"><use href="#i-up-right" /></svg></a></footer>
+  <dialog id="command-dialog" class="command-dialog" aria-labelledby="command-title"><div class="command-header"><h2 id="command-title">Go straight to it.</h2><button type="button" class="icon-button" id="close-command" aria-label="Close quick navigation"><svg class="icon"><use href="#i-close" /></svg></button></div><label for="command-search" class="visually-hidden">Find a section or action</label><input type="search" id="command-search" placeholder="Find work, experience, résumé…" autocomplete="off" /><div class="command-results"><a href="#reliability-lab" data-command>Run the reliability experiment <span>Experiment</span></a><a href="#case-drafts" data-command>Explore draft ownership <span>Experiment</span></a><a href="#work" data-command>Read the case studies <span>Work</span></a><a href="#approach" data-command>How I approach the work <span>Approach</span></a><a href="#experience" data-command>View my experience <span>Experience</span></a><a href="Aditya_Dixit_Resume_04_10_2026.pdf" target="_blank" rel="noopener noreferrer" data-command>Open my résumé <span>PDF</span></a><a href="mailto:aadityaadixit@gmail.com" data-command>Email Aditya <span>Contact</span></a><p id="command-empty" hidden>No matching action. Try “work”, “résumé”, or “contact”.</p></div><p class="command-hint">Use the arrow keys to move. Enter to open. Escape to close.</p></dialog>
+</body>
 </html>

@@ -1,0 +1,20 @@
+# Publish only the website. Development, research, and design records stay local.
+*
+!.gitignore
+!.nojekyll
+!index.html
+!styles.css
+!script.js
+!lab-engine.js
+!Aditya_Dixit_Resume_04_10_2026.pdf
+!assets/
+assets/*
+!assets/favicon.svg
+!assets/aditya.webp
+!assets/aditya.webp.json
+!assets/fonts/
+assets/fonts/*
+!assets/fonts/archivo-latin.woff2
+!assets/fonts/hanken-latin.woff2
+!assets/fonts/OFL-archivo.txt
+!assets/fonts/OFL-hanken.txt
