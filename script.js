@@ -129,7 +129,7 @@ function setRunning(value) {
   running = value;
   experiment.classList.toggle('is-running', value);
   runButton.disabled = value;
-  runButton.querySelector('span').textContent = value ? 'Running…' : 'Run experiment';
+  runButton.querySelector('span').textContent = value ? 'Running…' : 'Run demo';
   guard.disabled = value;
   scenarioButtons.forEach(button => { button.disabled = value; });
 }

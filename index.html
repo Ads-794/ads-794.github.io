@@ -55,7 +55,7 @@
         <div class="intro-foot"><span class="location-mark" aria-hidden="true"></span>Noida, India <span class="intro-separator">/</span> Building for the web since 2021</div>
       </div>
       <div class="experiment" id="reliability-lab" aria-labelledby="lab-title">
-        <div class="experiment-heading"><div><h2 id="lab-title">Try the unhappy path.</h2><p>A small experiment in dependable UI.</p></div><svg class="experiment-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M5 24h12l6-15 7 30 5-15h8" /></svg></div>
+        <div class="experiment-heading"><div><h2 id="lab-title">See how the UI handles failures.</h2><p>Choose a problem and run the demo. Then turn safeguards off and run it again to compare.</p></div><svg class="experiment-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M5 24h12l6-15 7 30 5-15h8" /></svg></div>
         <div class="scenario-tabs" role="group" aria-label="Choose a failure scenario"><button type="button" data-scenario="duplicate" aria-pressed="true" disabled>Duplicate event</button><button type="button" data-scenario="stale" aria-pressed="false" disabled>Out of order</button><button type="button" data-scenario="reconnect" aria-pressed="false" disabled>Connection loss</button></div>
         <div class="lab-screen">
           <div class="lab-toolbar"><span class="data-label">WORK QUEUE</span><span id="connection-state" class="connection-state"><span></span>Connected</span></div>
@@ -66,7 +66,7 @@
           <div class="event-route" aria-hidden="true"><span>Event stream</span><svg viewBox="0 0 260 28" preserveAspectRatio="none"><path class="route-line" d="M0 14h104q12 0 12-8v0h28v16h28v-8h88" /><circle class="route-packet" cx="11" cy="14" r="4" /></svg><span>Visible state</span></div>
           <div class="event-log" id="event-log" aria-label="Event decisions"><p><span class="log-marker"></span><span>Ready to receive an event.</span><code>waiting</code></p></div>
         </div>
-        <div class="lab-controls"><label class="guard-switch"><input type="checkbox" id="guard-toggle" checked disabled /><span class="switch-track" aria-hidden="true"></span>Safeguards <strong id="guard-word">on</strong></label><div><button class="reset-button" id="queue-reset" type="button" aria-label="Reset queue experiment" disabled><svg class="icon"><use href="#i-reset" /></svg></button><button class="button button-light" id="run-queue" type="button" disabled><svg class="icon"><use href="#i-play" /></svg><span>Run experiment</span></button></div></div>
+        <div class="lab-controls"><label class="guard-switch"><input type="checkbox" id="guard-toggle" checked disabled /><span class="switch-track" aria-hidden="true"></span>Safeguards <strong id="guard-word">on</strong></label><div><button class="reset-button" id="queue-reset" type="button" aria-label="Reset queue experiment" disabled><svg class="icon"><use href="#i-reset" /></svg></button><button class="button button-light" id="run-queue" type="button" disabled><svg class="icon"><use href="#i-play" /></svg><span>Run demo</span></button></div></div>
         <p class="lab-result" id="queue-result" role="status" aria-live="polite">Send the same event twice. Watch what makes it through.</p>
         <p class="simulation-note">Interactive demonstration · synthetic data · no live service</p>
         <noscript><p class="noscript-note">Enable JavaScript to run the experiments. The case studies and all contact links are available below.</p></noscript>
